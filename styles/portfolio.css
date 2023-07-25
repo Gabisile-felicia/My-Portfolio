@@ -1,24 +1,51 @@
-h1,
-h2,
+:root {
+  --labeling-color: rgb(75, 59, 37);
+  --secondary-color: rgb(199, 168, 125);
+  --heading-font-family: "Playfair Display", serif;
+  --default-font-family: "Poppins", sans-serif;
+}
+body {
+  font-family: var(--default-font-family);
+}
+h1 {
+  font-size: 96px;
+  font-family: var(--heading-font-family);
+  font-weight: bold;
+}
+h2 {
+  font-family: var(--heading-font-family);
+  font-weight: normal;
+  line-height: 2;
+  font-size: 24px;
+}
 h3 {
-  margin: 10px;
+  font-size: 36px;
+  font-weight: bold;
 }
 
-.hero {
-  padding: 30px;
-  margin: 10px;
-  text-align: center;
-  background-color: rgb(199, 168, 125);
+.mb-5 {
+  margin-bottom: 60px !important;
 }
-.labeling {
-  padding: 15px 20px;
+.hero {
+  padding: 160px 20px;
+  text-align: center;
+  background-color: var(--secondary-color);
+}
+.contact-link {
   margin: 20px !important;
-  color: #000;
-  background-color: rgb(75, 59, 37);
-  border: 1px solid rgb(199, 168, 125);
+}
+
+.labeling {
+  text-decoration: none;
+  padding: 15px 20px;
+  color: #fff;
+  background-color: var(--labeling-color);
+  border: 1px solid var(--labeling-color);
   border-radius: 4px;
   transition: all 200ms ease-in-out;
-  text-decoration: none;
 }
+
 .labeling:hover {
+  color: #000;
+  cursor: pointer;
 }
