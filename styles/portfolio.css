@@ -1,3 +1,24 @@
-h1 {
-  color: red;
+h1,
+h2,
+h3 {
+  margin: 10px;
+}
+
+.hero {
+  padding: 30px;
+  margin: 10px;
+  text-align: center;
+  background-color: rgb(199, 168, 125);
+}
+.labeling {
+  padding: 15px 20px;
+  margin: 20px !important;
+  color: #000;
+  background-color: rgb(75, 59, 37);
+  border: 1px solid rgb(199, 168, 125);
+  border-radius: 4px;
+  transition: all 200ms ease-in-out;
+  text-decoration: none;
+}
+.labeling:hover {
 }
