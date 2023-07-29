@@ -7,6 +7,13 @@
 body {
   font-family: var(--default-font-family);
 }
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 44px;
+    line-height: 1.5;
+  }
+}
 h1 {
   font-size: 96px;
   font-family: var(--heading-font-family);
@@ -96,4 +103,38 @@ h3 {
 
 .text-muted {
   color: #6c757d !important;
+}
+footer {
+  text-align: center;
+  margin: 10px;
+}
+
+footer .email-link {
+  text-decoration: none;
+  color: #000;
+  font-size: 24px;
+  text-align: center;
+}
+
+footer .email-link:hover {
+  color: var(--labeling-color);
+}
+footer .social-links {
+  margin: 15px;
+}
+footer .social-links a {
+  margin: 0 20px;
+  padding: 10px 14px;
+  background: var(--secondary-color);
+  border-radius: 50%;
+  color: #000;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+}
+
+footer .social-links a:hover {
+  color: #fff;
+  background: var(--labeling-color);
 }
